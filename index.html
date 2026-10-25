@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AVO WEB — разработка сайтов для бизнеса и специалистов</title>
+  <meta
+    name="description"
+    content="Создаю современные сайты-визитки и лендинги для бизнеса, специалистов и локальных компаний. Адаптивный дизайн, прозрачные цены, проекты от 3 000 ₽."
+  />
+  <meta name="theme-color" content="#0a0b0f" />
+  <meta property="og:title" content="AVO WEB — сайты, которые представляют ваш бизнес" />
+  <meta
+    property="og:description"
+    content="Лендинги, сайты-визитки и сайты для специалистов. Адаптивная вёрстка, понятный процесс работы, проекты от 3 000 ₽."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0b0f'/%3E%3Crect x='3' y='3' width='58' height='58' rx='13' fill='none' stroke='%232f6fee' stroke-width='2'/%3E%3Ctext x='32' y='43' font-family='Arial, sans-serif' font-size='30' font-weight='700' fill='%23f3f4f6' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">AVO<span>WEB</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#top">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Работы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="#order">Обсудить проект</a>
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <nav aria-label="Мобильная навигация">
+        <a href="#top">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Работы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="btn btn-primary btn-lg" href="#order">Обсудить проект</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="badge">Разработка сайтов</span>
+          <h1>Ваш бизнес заслуживает сильного сайта</h1>
+          <p class="hero-sub">
+            Делаю лендинги, сайты-визитки и сайты для мастеров, автосервисов
+            и ремонтных бригад — с адаптивным дизайном и понятной структурой,
+            в которой клиенты быстро находят нужное.
+          </p>
+          <div class="hero-actions">
+            <a href="#order" class="btn btn-primary btn-lg">Заказать сайт</a>
+            <a href="#portfolio" class="btn btn-ghost btn-lg">Смотреть работы</a>
+          </div>
+          <p class="hero-price">Проекты от <strong>3 000 ₽</strong></p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device device-laptop">
+            <div class="device-screen">
+              <div class="screen-bar"><span></span><span></span><span></span></div>
+              <div class="screen-body">
+                <div class="sb-hero"></div>
+                <div class="sb-row">
+                  <div class="sb-card"></div>
+                  <div class="sb-card"></div>
+                  <div class="sb-card"></div>
+                </div>
+                <div class="sb-line w60"></div>
+                <div class="sb-line w40"></div>
+              </div>
+            </div>
+            <div class="device-base"></div>
+          </div>
+          <div class="device device-phone">
+            <div class="device-screen">
+              <div class="screen-body screen-body-phone">
+                <div class="sb-line w70"></div>
+                <div class="sb-line w50"></div>
+                <div class="sb-pill"></div>
+                <div class="sb-card sb-card-tall"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="services-title">Услуги</h2>
+          <p>Выберите формат, который подходит вашему бизнесу — от быстрого лендинга до сайта с несколькими разделами.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4" width="15" height="12" rx="2"/><path d="M2.5 7.5h15"/></svg>
+            </span>
+            <h3>Лендинг</h3>
+            <span class="service-price">от 3 000 ₽</span>
+            <p>Одностраничный сайт под одну услугу, продукт или акцию. Помогает быстро начать принимать заявки.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="landing">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><circle cx="7" cy="10" r="1.6"/><path d="M11 9h5M11 12h5"/></svg>
+            </span>
+            <h3>Сайт-визитка</h3>
+            <span class="service-price">от 5 000 ₽</span>
+            <p>Несколько разделов: о компании, услуги, портфолио, контакты. Хорошо подходит как основной сайт небольшого бизнеса.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="card">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M10 2.8l2.1 4.4 4.8.6-3.5 3.4.9 4.8-4.3-2.3-4.3 2.3.9-4.8-3.5-3.4 4.8-.6z"/></svg>
+            </span>
+            <h3>Сайт для мастера или специалиста</h3>
+            <span class="service-price">от 3 000 ₽</span>
+            <p>Простой сайт для личного бренда: услуги, цены, примеры работ и способ связаться.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="business">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12.5l1.3-4.2A2 2 0 016.2 7h7.6a2 2 0 011.9 1.3L17 12.5"/><rect x="2.3" y="12.5" width="15.4" height="3.4" rx="1.2"/><circle cx="6" cy="16" r="1.1"/><circle cx="14" cy="16" r="1.1"/></svg>
+            </span>
+            <h3>Сайт для автосервиса</h3>
+            <span class="service-price">от 4 000 ₽</span>
+            <p>Раздел услуг, цены на основные работы, фото бокса и работ, форма записи.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="business">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l5 5-2 2-5-5z"/><path d="M11.3 6.7L4 14l2 2 7.3-7.3"/></svg>
+            </span>
+            <h3>Сайт для ремонтной бригады</h3>
+            <span class="service-price">от 4 000 ₽</span>
+            <p>Этапы работ, примеры объектов, отзывы — когда появятся — и форма заявки на расчёт.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="business">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a6 6 0 0110-4.2M16 10a6 6 0 01-10 4.2"/><path d="M14 3.5V6h-2.5M6 16.5V14h2.5"/></svg>
+            </span>
+            <h3>Редизайн существующего сайта</h3>
+            <span class="service-price">от 2 000 ₽</span>
+            <p>Обновление дизайна и вёрстки без потери текущего содержания сайта.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="fix">Заказать</a>
+          </article>
+
+          <article class="service-card" data-reveal>
+            <span class="service-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 3.8a3.2 3.2 0 00-4.1 4L4 13.3l2.7 2.7 5.5-5.4a3.2 3.2 0 004-4.1l-2.4 2.4-2-2z"/></svg>
+            </span>
+            <h3>Исправления и доработки</h3>
+            <span class="service-price">от 500 ₽</span>
+            <p>Точечные правки: изменить текст, добавить блок, поправить вёрстку на телефоне.</p>
+            <a href="#order" class="btn btn-ghost btn-sm" data-service="fix">Заказать</a>
+          </article>
+        </div>
+
+        <p class="services-note">
+          Итоговая стоимость зависит от объёма и требований проекта — называю её после обсуждения задачи, до начала работы.
+        </p>
+      </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="portfolio-title">Работы</h2>
+          <p>Демонстрационные концепции — примеры того, как может выглядеть сайт для похожего бизнеса. Это не заказы реальных клиентов.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="portfolio-card" data-reveal>
+            <div class="portfolio-media">
+              <div class="mock-browser">
+                <div class="screen-bar"><span></span><span></span><span></span></div>
+                <div class="mock-fill">
+                  <div class="mock-block accent"></div>
+                  <div class="mock-block"></div>
+                  <div class="mock-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <span class="portfolio-kicker">Концепт сайта для автодетейлинга</span>
+              <h3>LUMEN AUTO</h3>
+              <p>Сайт для студии автодетейлинга: акцент на фотографиях результата и прозрачных ценах на пакеты услуг.</p>
+              <ul class="portfolio-features">
+                <li>Адаптивная галерея работ</li>
+                <li>Прайс по пакетам услуг</li>
+                <li>Форма записи на мойку и детейлинг</li>
+              </ul>
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://avofsion7.github.io/lumen-auto-demo/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Открыть демо LUMEN AUTO (новая вкладка)"
+                >Открыть демо</a
+              >
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-reveal>
+            <div class="portfolio-media">
+              <div class="mock-browser">
+                <div class="screen-bar"><span></span><span></span><span></span></div>
+                <div class="mock-fill">
+                  <div class="mock-block"></div>
+                  <div class="mock-block accent"></div>
+                  <div class="mock-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <span class="portfolio-kicker">Концепт сайта ремонтной бригады</span>
+              <h3>ПРОФИ РЕМОНТ</h3>
+              <p>Сайт для бригады отделочных работ: этапы ремонта, примеры объектов и форма заявки на выезд замерщика.</p>
+              <ul class="portfolio-features">
+                <li>Этапы ремонта по шагам</li>
+                <li>Примеры выполненных объектов</li>
+                <li>Форма заявки на расчёт</li>
+              </ul>
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://avofsion7.github.io/profi-remont/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Открыть демо ПРОФИ РЕМОНТ (новая вкладка)"
+                >Открыть демо</a
+              >
+            </div>
+          </article>
+
+          <article class="portfolio-card" data-reveal>
+            <div class="portfolio-media">
+              <div class="mock-browser">
+                <div class="screen-bar"><span></span><span></span><span></span></div>
+                <div class="mock-fill">
+                  <div class="mock-block accent"></div>
+                  <div class="mock-block"></div>
+                  <div class="mock-block"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-body">
+              <span class="portfolio-kicker">Концепт сайта барбершопа</span>
+              <h3>OB SIDIAN</h3>
+              <p>Сайт для барбершопа: услуги и цены, портфолио стрижек мастеров, запись онлайн.</p>
+              <ul class="portfolio-features">
+                <li>Прайс на стрижки и уход</li>
+                <li>Галерея работ мастеров</li>
+                <li>Форма онлайн-записи</li>
+              </ul>
+              <span class="btn btn-ghost btn-sm btn-disabled" aria-disabled="true">Демо скоро</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="portfolio-disclaimer">
+          Все проекты в этом разделе — демонстрационные концепции, созданные для портфолио, а не работы для реальных клиентов. Статистика и результаты по ним не приводятся.
+        </p>
+      </div>
+    </section>
+
+    <!-- ЭТАПЫ РАБОТЫ -->
+    <section aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="process-title">Как проходит работа</h2>
+          <p>Понятный процесс без сюрпризов — вы видите каждый шаг до того, как сайт опубликован.</p>
+        </div>
+
+        <div class="process-list">
+          <div class="process-step" data-reveal>
+            <span class="step-num">01</span>
+            <h3>Обсуждаем задачу</h3>
+            <p>Созваниваемся или переписываемся в Telegram, разбираем, что нужно сайту и вашему бизнесу.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">02</span>
+            <h3>Согласовываем структуру и стоимость</h3>
+            <p>Фиксируем разделы сайта и итоговую цену до начала работы — без скрытых доплат.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">03</span>
+            <h3>Создаю дизайн и собираю сайт</h3>
+            <p>Делаю дизайн и вёрстку, показываю промежуточные версии, чтобы вы могли скорректировать курс.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">04</span>
+            <h3>Проверяем мобильную версию</h3>
+            <p>Тестирую сайт на телефоне, планшете и компьютере вместе с вами.</p>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">05</span>
+            <h3>Публикую готовый проект</h3>
+            <p>Сайт выходит в сеть только после вашего подтверждения, что всё устраивает.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРАЙС -->
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="pricing-title">Прайс</h2>
+          <p>Стартовые цены по типам сайтов. Точная стоимость зависит от объёма и обсуждается до начала работы.</p>
+        </div>
+
+        <div class="price-table" data-reveal>
+          <div class="price-row">
+            <span class="price-name">Лендинг</span>
+            <span class="price-value">от 3 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Сайт-визитка</span>
+            <span class="price-value">от 5 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Сайт для мастера или специалиста</span>
+            <span class="price-value">от 3 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Сайт для автосервиса</span>
+            <span class="price-value">от 4 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Сайт для ремонтной бригады</span>
+            <span class="price-value">от 4 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Редизайн существующего сайта</span>
+            <span class="price-value">от 2 000 ₽</span>
+          </div>
+          <div class="price-row">
+            <span class="price-name">Исправления и доработки</span>
+            <span class="price-value">от 500 ₽</span>
+          </div>
+        </div>
+
+        <div class="price-cta" data-reveal>
+          <a href="#order" class="btn btn-primary">Получить расчёт</a>
+          <p>Цены стартовые. Скрытых платежей нет, но не любая доработка входит в минимальную стоимость — это обсуждается заранее.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="reviews-title">Отзывы</h2>
+        </div>
+
+        <div class="reviews-placeholder" data-reveal>
+          <p>Отзывы клиентов появятся здесь после завершения первых заказов. Пока расскажу, что вы получаете при работе со мной.</p>
+        </div>
+
+        <h3 data-reveal>Что вы получите</h3>
+        <div class="benefits-grid" style="margin-top: 1.4rem">
+          <div class="benefit-item" data-reveal>
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l3.4 3.4L16 5"/></svg>
+            </span>
+            <p>Сайт, который быстро открывается и корректно работает на телефоне.</p>
+          </div>
+          <div class="benefit-item" data-reveal>
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l3.4 3.4L16 5"/></svg>
+            </span>
+            <p>Прозрачную цену, согласованную до начала работы.</p>
+          </div>
+          <div class="benefit-item" data-reveal>
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l3.4 3.4L16 5"/></svg>
+            </span>
+            <p>Понятную структуру кода, которую сможет продолжить любой разработчик.</p>
+          </div>
+          <div class="benefit-item" data-reveal>
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l3.4 3.4L16 5"/></svg>
+            </span>
+            <p>Правки после сдачи проекта — в рамках заранее согласованного объёма.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ЗАКАЗА -->
+    <section id="order" aria-labelledby="order-title">
+      <div class="container order-wrap">
+        <div>
+          <div class="section-head" data-reveal style="margin-bottom: 1.6rem">
+            <h2 id="order-title">Обсудим проект</h2>
+            <p>Заполните форму — отвечу с уточнениями или сразу предложу решение под вашу задачу.</p>
+          </div>
+
+          <form class="order-form" id="order-form" novalidate data-reveal>
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" />
+              <span class="field-error" id="name-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="contact">Контакт для связи</label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="Telegram, телефон или email"
+                aria-describedby="contact-error"
+              />
+              <span class="field-error" id="contact-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="site-type">Тип сайта</label>
+              <select id="site-type" name="site-type" aria-describedby="site-type-error">
+                <option value="">Выберите тип сайта</option>
+                <option value="landing">Лендинг</option>
+                <option value="card">Сайт-визитка</option>
+                <option value="business">Сайт для бизнеса</option>
+                <option value="fix">Доработка</option>
+              </select>
+              <span class="field-error" id="site-type-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="budget">Примерный бюджет</label>
+              <select id="budget" name="budget" aria-describedby="budget-error">
+                <option value="">Выберите диапазон</option>
+                <option value="до 3 000 ₽">До 3 000 ₽</option>
+                <option value="3 000–7 000 ₽">3 000–7 000 ₽</option>
+                <option value="7 000–15 000 ₽">7 000–15 000 ₽</option>
+                <option value="обсудим вместе">Обсудим вместе</option>
+              </select>
+              <span class="field-error" id="budget-error" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="description">Описание задачи</label>
+              <textarea
+                id="description"
+                name="description"
+                placeholder="Коротко опишите бизнес и что должен делать сайт"
+                aria-describedby="description-error"
+              ></textarea>
+              <span class="field-error" id="description-error" role="alert"></span>
+            </div>
+
+            <div class="consent">
+              <input type="checkbox" id="consent" name="consent" aria-describedby="consent-error" />
+              <label for="consent">
+                Согласен(на) на обработку персональных данных согласно
+                <a href="privacy.html">политике конфиденциальности</a>
+              </label>
+            </div>
+            <span class="field-error" id="consent-error" role="alert"></span>
+
+            <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+          </form>
+
+          <div class="order-success" id="order-success" tabindex="-1" role="status" aria-live="polite">
+            <h3>Заявка готова</h3>
+            <p>
+              Форма работает в демонстрационном режиме: сайт пока не подключён к серверу, поэтому заявка не отправляется
+              автоматически. Нажмите кнопку ниже, чтобы отправить то же сообщение мне в Telegram.
+            </p>
+            <a
+              id="telegram-send-link"
+              class="btn btn-primary"
+              href="https://t.me/avofsionWEB"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Написать в Telegram</a
+            >
+          </div>
+        </div>
+
+        <aside class="order-aside">
+          <div class="aside-point" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <p>Отвечаю на заявки в течение дня — время ответа указано в разделе «Контакты».</p>
+          </div>
+          <div class="aside-point" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <p>Цена и сроки фиксируются только после обсуждения задачи — ничего не согласовывается «задним числом».</p>
+          </div>
+          <div class="aside-point" data-reveal>
+            <span class="dot" aria-hidden="true"></span>
+            <p>Если проще написать напрямую — контакты для связи ниже, форма не обязательна.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts-wrap">
+        <div data-reveal>
+          <h2 id="contacts-title">Контакты</h2>
+          <p style="margin-top: 0.9rem">
+            Проще всего написать в Telegram — там быстрее всего получится обсудить задачу и сроки.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://t.me/avofsionWEB" target="_blank" rel="noopener noreferrer"
+              >Написать в Telegram</a
+            >
+            <a class="btn btn-ghost" href="#order">Обсудить проект</a>
+          </div>
+        </div>
+
+        <div class="contact-card" data-reveal>
+          <h3>Как связаться</h3>
+          <div class="contact-row">
+            <span class="label">Telegram</span>
+            <a href="https://t.me/avofsionWEB" target="_blank" rel="noopener noreferrer">@avofsionWEB</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">Telegram-канал</span>
+            <a href="https://t.me/AVO_WEB" target="_blank" rel="noopener noreferrer">AVO WEB</a>
+          </div>
+          <div class="contact-row">
+            <span class="label">Время ответа</span>
+            <span>Обычно в течение дня, без круглосуточной поддержки</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 id="faq-title">Частые вопросы</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>Сколько стоит сайт?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Минимальная цена указана в разделе «Прайс». Точная стоимость зависит от количества разделов, функций и дизайна — называю её после обсуждения задачи.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Сколько времени занимает разработка?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Зависит от объёма: простой лендинг обычно занимает несколько дней, сайт с несколькими разделами — дольше. Сроки согласовываем до начала работы.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Будет ли сайт работать на телефоне?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Да, все сайты адаптивны и проверяются на разных экранах — от телефона до большого монитора.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Можно ли внести изменения?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Да, в рамках согласованного объёма правки включены. Доработки после сдачи проекта оплачиваются отдельно — раздел «Исправления и доработки».</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Где будет размещён сайт?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Чаще всего на GitHub Pages или хостинге, который удобен вам. Домен и размещение обсуждаем отдельно от разработки.</p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Можно ли заказать доработку существующего сайта?<span class="chevron" aria-hidden="true">+</span></summary>
+            <p>Да, для этого есть услуги «Редизайн существующего сайта» и «Исправления и доработки».</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="logo" href="#top">AVO<span>WEB</span></a>
+          <p>Разработка сайтов для бизнеса, специалистов и локальных компаний. Сайты, которые представляют ваш бизнес.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#top">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Работы</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="https://t.me/avofsionWEB" target="_blank" rel="noopener noreferrer">Telegram: @avofsionWEB</a></li>
+            <li><a href="https://t.me/AVO_WEB" target="_blank" rel="noopener noreferrer">Канал в Telegram</a></li>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> AVO WEB</span>
+        <span>Демонстрационный сайт-портфолио</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
